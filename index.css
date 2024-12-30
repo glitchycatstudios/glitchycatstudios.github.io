@@ -41,7 +41,7 @@ body{
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 2px;
+    top: 2.1px;
     right: 5px;
 }
 #theme-switch svg{
