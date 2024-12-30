@@ -1,4 +1,5 @@
 :root{
+    --menu-button-color: #355863;
     --base-color: white;
     --base-variant: #e8e9ed;
     --menu-color: #978d8d;
@@ -8,6 +9,7 @@
     --accent-color: #0071ff;
 }
 .darkmode{
+    --menu-button-color: #69a4b5;
     --base-color: #070b1d;
     --base-variant: #101425;
     --menu-color: gray;
@@ -41,7 +43,7 @@ body{
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 2.1px;
+    top: 2.2px;
     right: 5px;
 }
 #theme-switch svg{
@@ -55,4 +57,16 @@ body{
 }
 .darkmode #theme-switch svg:last-child{
     display: block;
+}
+
+#menuhome{
+    background-color: var(--menu-button-color);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    height: 45px;
+    width:  100px;
+    position: fixed;
+    left: 5px;
+    top: 3.8px;
 }
