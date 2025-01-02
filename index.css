@@ -29,7 +29,7 @@ body{
 .menu{
     background-color: var(--menu-color);
     width: min(95%, 1212px);
-    height: 10%;
+    height: min(95%, 60px);
     position: absolute;
     left: 5.1%;
     transform: translateX(-3%);
@@ -38,8 +38,8 @@ body{
 }
 #theme-switch{
     border: none;
-    height: 50px;
-    width: 50px;
+    height: min(95%, 50px);
+    width: min(95%, 50px);
     padding: 0;
     border-radius: 50%;
     background-color: var(--base-variant);
