@@ -1,4 +1,6 @@
 :root{
+    --menu-button-hover: #5f6460;
+    --active-menu-button: #1a6e2e;
     --menu-button-color: #355863;
     --base-color: white;
     --base-variant: #e8e9ed;
@@ -9,6 +11,8 @@
     --accent-color: #0071ff;
 }
 .darkmode{
+    --menu-button-hover: #5f6460;
+    --active-menu-button: #32e95c;
     --menu-button-color: #69a4b5;
     --base-color: #070b1d;
     --base-variant: #101425;
@@ -24,11 +28,11 @@ body{
 }
 .menu{
     background-color: var(--menu-color);
-    width: 99%;
+    width: min(95%, 1212px);
     height: 10%;
     position: absolute;
-    left: 1%;
-    transform: translateX(-0.5%);
+    left: 5.1%;
+    transform: translateX(-3%);
     top: 1%;
     border-radius: 15px;
 }
@@ -60,13 +64,36 @@ body{
 }
 
 #menuhome{
-    background-color: var(--menu-button-color);
     color: white;
     border: none;
     border-radius: 15px;
     height: 45px;
     width:  100px;
-    position: fixed;
+    position: absolute;
     left: 5px;
     top: 3.8px;
+}
+#menuhome:hover{
+    background-color: var(--menu-button-hover);
+}
+
+#menugames{
+    color: white;
+    border: none;
+    border-radius: 15px;
+    height: 45px;
+    width:  100px;
+    position: absolute;
+    left: 119px;
+    top: 3.8px;
+}
+#menugames:hover{
+    background-color: var(--menu-button-hover);
+}
+
+.active{
+    background-color: var(--active-menu-button);
+}
+.non-active{
+    background-color: var(--menu-button-color);
 }
