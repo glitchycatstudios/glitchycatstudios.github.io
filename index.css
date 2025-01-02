@@ -67,8 +67,8 @@ body{
     color: white;
     border: none;
     border-radius: 15px;
-    height: 45px;
-    width:  100px;
+    height: 50px;
+    width: min(90%, 100px);
     position: absolute;
     left: 5px;
     top: 3.8px;
@@ -81,8 +81,8 @@ body{
     color: white;
     border: none;
     border-radius: 15px;
-    height: 45px;
-    width:  100px;
+    height: 50px;
+    width: min(90%, 100px);
     position: absolute;
     left: 119px;
     top: 3.8px;
@@ -91,9 +91,29 @@ body{
     background-color: var(--menu-button-hover);
 }
 
+#menuaboutus{
+    color: white;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    width: min(90%, 100px);
+    position: absolute;
+    left: 233px;
+    top: 3.8px;
+}
+#menuaboutus:hover{
+    background-color: var(--menu-button-hover);
+}
+
 .active{
     background-color: var(--active-menu-button);
 }
 .non-active{
     background-color: var(--menu-button-color);
+}
+#versiontext{
+    color: var(--text-color);
+    position: absolute;
+    bottom: -15px;
+    right: 5px;
 }
