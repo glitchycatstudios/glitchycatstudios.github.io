@@ -102,6 +102,18 @@ body{
     top: 3.8px;
 }
 
+#menucontactus{
+    color: white;
+    border: none;
+    display: block;
+    border-radius: 15px;
+    height: 50px;
+    width: min(90%, 100px);
+    position: absolute;
+    left: 348px;
+    top: 3.8px;
+}
+
 .active{
     background-color: var(--active-menu-button);
 }
