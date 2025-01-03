@@ -8,6 +8,68 @@
   <script src="script.js" defer></script>
   <link rel="icon" type="image/x-icon" href="favicongcs.ico" />
 </head>
+<style>
+#game1{
+  background-color: #282a3c;
+  width: min(90%, 800px);
+  height: min(90%, 200px);
+  border-radius: 15px;
+  position: absolute;
+  top: 200px;
+  }
+  #namegame1{
+    position: absolute;
+    left: 5px;
+  }
+  #fotogame1{
+    width: min(90%, 400px);
+    height: min(90%,200px);
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+  }
+  #buttongame1{
+    background-color: green;
+    border: none;
+    border-radius: 15px;
+    width: min(90%, 300px);
+    height: min(90%,50px);
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+  }
+  #game2{
+  background-color: #282a3c;
+  width: min(90%, 800px);
+  height: min(90%, 200px);
+  border-radius: 15px;
+  position: absolute;
+  top: 425px;
+  }
+  #namegame2{
+    position: absolute;
+    left: 5px;
+  }
+  #fotogame2{
+    width: min(90%, 400px);
+    height: min(90%,200px);
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+  }
+  #buttongame2{
+    background-color: green;
+    border: none;
+    border-radius: 15px;
+    width: min(90%, 300px);
+    height: min(90%,50px);
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+  }
+</style>
 <body>
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -35,7 +97,24 @@
 
   <main>
     <h1>Games</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis amet odio nostrum, in architecto voluptatum nihil incidunt. Mollitia enim, dolorum laborum voluptas voluptate modi ipsam quam. Similique repellat perspiciatis accusantium sed assumenda modi maiores id deleniti dolor obcaecati, ea asperiores amet corporis porro reiciendis quos qui laborum. Architecto, perferendis?</p>
+    <div id="game1">
+      <h2 id="namegame1">A obby but your screen gets<br>blocked every 30sec.</h2>
+      <img id="fotogame1" src="game1foto.png">
+      <a href="https://www.roblox.com/games/78751619192591/A-obby-but-your-screen-gets-blocked-every-30-sec">
+        <button id="buttongame1">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Z"/></svg>
+        </button>
+      </a>
+    </div>
+    <div id="game2">
+      <h2 id="namegame2">Comming Soon!</h2>
+      <img id="fotogame2" src="Comming Soon!.png">
+      <a>
+        <button id="buttongame2">
+          Comming Soon!
+        </button>
+      </a>
+    </div>
   </main>
   
 </body>
