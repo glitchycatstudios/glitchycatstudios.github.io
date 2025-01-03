@@ -1,5 +1,5 @@
 :root{
-    --menu-button-hover: #5f6460;
+    --menu-non-active-button-hover: #5f6460;
     --active-menu-button: #1a6e2e;
     --menu-button-color: #355863;
     --base-color: white;
@@ -11,7 +11,7 @@
     --accent-color: #0071ff;
 }
 .darkmode{
-    --menu-button-hover: #5f6460;
+    --menu-non-active-button-hover: #5f6460;
     --active-menu-button: #32e95c;
     --menu-button-color: #69a4b5;
     --base-color: #070b1d;
@@ -30,6 +30,7 @@ body{
     background-color: var(--menu-color);
     width: min(95%, 1212px);
     height: min(95%, 60px);
+    display: flex;
     position: absolute;
     left: 5.1%;
     transform: translateX(-3%);
@@ -40,15 +41,17 @@ body{
     border: none;
     height: min(95%, 50px);
     width: min(95%, 50px);
+    justify-items: center;
     padding: 0;
     border-radius: 50%;
     background-color: var(--base-variant);
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 2.2px;
-    right: 5px;
+    position: absolute;
+    left: 99%;
+    transform: translateX(-99%);
+    top: 5px;
 }
 #theme-switch svg{
     fill: var(--primary-color);
@@ -66,6 +69,7 @@ body{
 #menuhome{
     color: white;
     border: none;
+    display: block;
     border-radius: 15px;
     height: 50px;
     width: min(90%, 100px);
@@ -73,13 +77,11 @@ body{
     left: 5px;
     top: 3.8px;
 }
-#menuhome:hover{
-    background-color: var(--menu-button-hover);
-}
 
 #menugames{
     color: white;
     border: none;
+    display: block;
     border-radius: 15px;
     height: 50px;
     width: min(90%, 100px);
@@ -87,13 +89,11 @@ body{
     left: 119px;
     top: 3.8px;
 }
-#menugames:hover{
-    background-color: var(--menu-button-hover);
-}
 
 #menuaboutus{
     color: white;
     border: none;
+    display: block;
     border-radius: 15px;
     height: 50px;
     width: min(90%, 100px);
@@ -101,15 +101,18 @@ body{
     left: 233px;
     top: 3.8px;
 }
-#menuaboutus:hover{
-    background-color: var(--menu-button-hover);
-}
 
 .active{
     background-color: var(--active-menu-button);
 }
+.active:hover{
+    background-color: var();
+}
 .non-active{
     background-color: var(--menu-button-color);
+}
+.non-active:hover{
+    background-color: var(--menu-non-active-button-hover);
 }
 #versiontext{
     color: var(--text-color);
